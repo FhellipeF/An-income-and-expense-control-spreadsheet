@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Financial Control</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+      <div class="spreadsheet">
+        <h1>Control of expenses</h1>
+        <section class="current-balance">
+          <h2>Current balance</h2>
+          <p id="current-balance">$ 0.00</p>
+          <div class="income-expenses">
+            <div class="income">
+              <h3>Income</h3>
+              <p id="income">$ 0.00</p>
+            </div>
+            <div class="expenses">
+              <h3>Expenses</h3>
+              <p id="expenses">$ 0.00</p>
+            </div>
+          </div>
+        </section>
+        <section class="transactions">
+          <h2>Transactions</h2>
+          <ul id="transactions"></ul>
+        </section>
+        <section class="add-transactions">
+          <h2>Add transactions</h2>
+          <div class="transaction">
+            <form action="" id="form">
+              <div class="input">
+                <label for="name">Name:</label>
+                <input
+                  
+                  type="text"
+                  id="name"
+                  placeholder="Transaction name"
+                />
+              </div>
+              <div class="input">
+                <label for="value">Value:</label>
+                <input
+                  
+                  type="number"
+                  id="value"
+                  placeholder="Transaction amount"
+                />
+              </div>
+              <button class ="button" type="submit">Add</button>
+            </form>
+          </div>
+        </section>
+      </div>
+    <script src="script.js"></script>
+  </body>
+</html>
